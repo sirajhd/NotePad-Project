@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    transition: background-color  .3s ease, color  .3s ease;
+
+}
+:root{
+    --bg-color:#f9f9f9;
+    --text-color:#3333;
+    --button-bg:#0f7dd7;
+    --button-hover:#0f7dd7;
+}
+body.dark-theme{
+    --bg-color:#333;
+    --text-color:#af8d12;
+    --button-color:#af8d12;
+    --button-hover:#1e6c09;
+
+}
+.container{
+    background-color: #ffffffff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0  8px 20px rgba(0, 0, 0,0.1);
+    padding: 20px;
+    
+}
+.notepad-header{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
+
+
+}
+.notepad-header h1{
+   font-size: 1.5rem; 
+   margin: 0;
+}
+.header-button button{
+    background-color:#af8d12;;
+    
+    border: none;
+    padding: 10px 15px;
+    margin-left: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: 600;
+
+}
+
+.header-button button:hover{
+    background:var(--button-hover);
+
+}
+#notepad{
+    height: 400px;
+     align-items: center;
+     width: 100%;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+    font-size: 1rem;
+     font-family:'courier New',courier,monospace;
+     background-color: #f9f9f9;
+     color: #333;
+     outline: none;
+     box-shadow: 0 2px 4px;
+ }
